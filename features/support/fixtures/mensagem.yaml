@@ -1,0 +1,10 @@
+login_incorreto:
+  mensagem: "Authentication failed."
+senha_incorreta:
+  mensagem: "Authentication failed."
+login_vazio:
+  mensagem: "An email address required."
+senha_vazia:
+  mensagem: "Password is required."
+crendenciais_vazias:
+  mensagem: "An email address required." 
