@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+# mapeamento de elementos => document.queryselector('').textContent ex: div>h1, .page-heading, #email, a[title=....]
 require 'capybara/dsl'
 
 class LoginPage

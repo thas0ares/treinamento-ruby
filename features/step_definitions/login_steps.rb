@@ -15,7 +15,7 @@ Então('eu poderei ver a mensagem {string}') do |mensagem|
 end
 
 Então('não consiguirei acessar minha conta e verei a mensagem {string}') do |mensagem|
-  file = YAML.load_file(File.join(Dir.pwd, 'features/support/fixtures/mensagem.yaml'))
+  file = YAML.load_file(File.join(Dir.pwd, 'features/support/fixtures/mensagem.yaml')) #abre o arquivo .yaml da mensagem correspondente e presente no arquivo .feature 
   dados = file[mensagem]
   expect(@login_page.exibir_msg_error).to have_content dados['mensagem']
 end
