@@ -30,8 +30,9 @@ Funcionalidade: Tentativas de login
             | ""                 | "12345"     | "login_vazio"         |
             | "abc@def.fg"       | ""          | "senha_vazia"         |
             | ""                 | ""          | "crendenciais_vazias" |
+            | "abc@def.fg"       | "1234"      | "senha_invalida"      | 
 
-
+            
     # @login_incorreto_senha_correta
     # Cenário: Login incorreto senha correta
     #     Dado que eu visito o site "http://automationpractice.com/"

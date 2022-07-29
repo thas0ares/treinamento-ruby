@@ -18,6 +18,7 @@ Então('não consiguirei acessar minha conta e verei a mensagem {string}') do |m
   file = YAML.load_file(File.join(Dir.pwd, 'features/support/fixtures/mensagem.yaml')) #abre o arquivo .yaml da mensagem correspondente e presente no arquivo .feature 
   dados = file[mensagem]
   expect(@login_page.exibir_msg_error).to have_content dados['mensagem']
+  page.save_screenshot('log/screenshots/' + mensagem + '.png')
 end
 
 # Então('não consiguirei acessar minha conta e verei a mensagem {string}') do |mensagem|

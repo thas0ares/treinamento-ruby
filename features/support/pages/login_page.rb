@@ -5,7 +5,7 @@ require 'capybara/dsl'
 class LoginPage
   include Capybara::DSL
   def clicar_sign_in_lnk
-    find('a[title="Log in to your customer account"]').click
+    find('a.login').click
   end
 
   def inserir_credenciais(email, senha)

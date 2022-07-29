@@ -8,3 +8,5 @@ senha_vazia:
   mensagem: "Password is required."
 crendenciais_vazias:
   mensagem: "An email address required." 
+senha_invalida:
+  mensagem: "Invalid password."
